@@ -1,0 +1,9 @@
+{
+  "name": "concierge-onboarding",
+  "version": "1.0.0",
+  "description": "Concierge onboarding with Netlify Functions",
+  "main": "script.js",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
