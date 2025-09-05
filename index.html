@@ -104,6 +104,14 @@
                 <input type="hidden" id="formGooglePlaceId" name="googlePlaceId" />
                 <input type="hidden" id="formMapsUrl" name="mapsUrl" />
                 
+                <!-- GDPR/PIPEDA/CCPA Consent Checkbox -->
+                <div class="consent-box">
+                    <input type="checkbox" id="consentCheckbox" name="consent" required>
+                    <label for="consentCheckbox">
+                        I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and consent to having my data processed to create my free trial account.
+                    </label>
+                </div>
+
                 <div class="nav-buttons">
                     <button type="button" id="backToPrevious" class="button secondary">Back</button>
                     <button type="submit" class="button primary">Submit & Start Trial</button>
