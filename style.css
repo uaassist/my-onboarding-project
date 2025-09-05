@@ -5,7 +5,8 @@
     --secondary-color: #F0F2F5;
     --text-dark: #1D2B3A;
     --text-light: #6B7A8C;
-    --background-color: #F9FAFB;
+    --background-color: #F9FAFB; /* Best practice: a subtle off-white/light gray */
+    --card-background-color: #FFFFFF;
     --border-color: #DDE2E7;
     --error-color: #D93025;
     --success-color: #1E8E3E;
@@ -30,7 +31,7 @@ body {
 }
 
 .step-box {
-    background-color: #fff;
+    background-color: var(--card-background-color);
     padding: 30px 40px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
@@ -225,7 +226,7 @@ h2 {
     display: none !important;
 }
 
-/* Formspree/Netlify hidden fields */
+/* Netlify hidden fields */
 form p.hidden {
    display: none;
 }
@@ -246,7 +247,6 @@ form p.hidden {
 }
 
 /* 2. Create a class that applies the animation */
-#avatarImage.speaking {
-  animation: pulse-avatar 1s infinite;
+.avatar.speaking {
+  animation: pulse-avatar 2s infinite;
 }
-
