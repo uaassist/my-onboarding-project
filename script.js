@@ -34,12 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function typewriter(element, text, callback) {
         let i = 0;
         element.innerHTML = '';
+        
+        // Find the avatar and add the .speaking class to start the animation
+        const avatar = document.getElementById('avatarImage');
+        if (avatar) {
+            avatar.classList.add('speaking');
+        }
+
         const typing = setInterval(() => {
             if (i < text.length) {
                 element.innerHTML += text.charAt(i);
                 i++;
             } else {
                 clearInterval(typing);
+
+                // Typing is done, so remove the .speaking class to stop the animation
+                if (avatar) {
+                    avatar.classList.remove('speaking');
+                }
+
                 if (callback) callback();
             }
         }, 50); // Typing speed in ms
