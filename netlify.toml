@@ -1,9 +1,0 @@
-[build]
-  # This tells Netlify where your website files are.
-  publish = "my-onboarding-project"
-  # This tells Netlify where your function files are.
-  functions = "my-onboarding-project/functions"
-
-[functions]
-  # This ensures your function's dependencies are installed.
-  node_bundler = "esbuild"
