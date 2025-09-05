@@ -94,7 +94,7 @@
                 <p><strong>Business:</strong> <span id="confirmBusiness"></span></p>
             </div>
             <!-- Netlify Form Integration -->
-            <form name="onboarding" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="onboarding" method="POST" action="/index.html?submitted=true" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="onboarding">
                 <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
                 <input type="hidden" id="formName" name="name" />
@@ -124,4 +124,5 @@
 <script src="script.js"></script>
 <!-- Re-deploy v2 -->
 </body>
+
 </html>
