@@ -247,5 +247,6 @@ form p.hidden {
 
 /* 2. Create a class that applies the animation */
 #avatarImage.speaking {
-  animation: pulse-avatar 2s infinite;
+  animation: pulse-avatar 1s infinite;
 }
+
